@@ -23,6 +23,7 @@
 
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
+		by editing the text here I should see changes 
 	</h2>
 
 	<Counter />
