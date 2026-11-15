@@ -1,6 +1,19 @@
-# SvelteKit Demo app
+# SvelteKit demo template
 
-The official demo app for SvelteKit, hosted on Vercel.
+**The official SvelteKit demo app, a template to start from: a welcome page, a counter, and "Sverdle", a server-backed Wordle clone.**
+
+> This repository is a **template / demo app**, not an original project. It is the SvelteKit demo published by the SvelteKit team and hosted on Vercel. It pins SvelteKit 1.x, Svelte 3 and the Vercel adapter.
+
+## What is in it
+
+- `/`: a home page with a spring-animated counter component.
+- `/about`: a short static page.
+- `/sverdle`: a Wordle clone. Game state lives in a cookie, guesses are checked on the server, and the word list is server-only. Includes a `/sverdle/how-to-play` page. Confetti on a win (`@neoconfetti/svelte`).
+- Unit tests for the game logic (`src/routes/sverdle/game.test.js`, Vitest) and one Playwright end-to-end check (`tests/test.js`).
+
+## Tech stack
+
+SvelteKit 1 · Svelte 3 · Vite 4 · `@sveltejs/adapter-vercel` · Vitest · Playwright · ESLint and Prettier · pnpm
 
 ## Deploy Your Own
 
@@ -8,7 +21,9 @@ The official demo app for SvelteKit, hosted on Vercel.
 
 _Live Example: https://sveltekit-template.vercel.app_
 
-## Developing
+## Getting started
+
+### Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -19,7 +34,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
 To create a production version of your app:
 
